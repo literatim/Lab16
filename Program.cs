@@ -10,6 +10,22 @@ namespace Lab16
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to the Countries Maintenance Application!");
+
+            int menuSelection = CountriesApp.DisplayMenu();
+
+            do
+            {
+                CountriesApp.NavigateMenu(menuSelection);
+                menuSelection = CountriesApp.DisplayMenu();
+
+            } while (menuSelection != 3);
+
+
+            Console.WriteLine("Bye!");
+            Console.ReadKey();
+
+
         }
     }
 }
