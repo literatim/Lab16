@@ -31,6 +31,7 @@ namespace Lab16
                 case 2:
                     Console.Write("Enter a country: ");
                     countryInput = Console.ReadLine();
+                    Validator.GetUserCountry(countryInput);
                     CountriesTextFile.WriteCountriesToFile(countryInput);
                     break;
                 case 3:
