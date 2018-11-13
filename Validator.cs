@@ -26,7 +26,7 @@ namespace Lab16
             {
                 Console.WriteLine("Country cannot be blank!");
                 Console.Write("Enter country: ");
-                Console.ReadLine();
+                input = Console.ReadLine();
             }
 
             return input;
